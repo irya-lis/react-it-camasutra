@@ -24,15 +24,12 @@ function App() {
         };
         let newTasks = [newTask, ...tasks];
         setTasks(newTasks);
-
-
     }
 
     function removeTask(id: string) {
         let filteredTasks = tasks.filter(task => task.id !== id);
         setTasks(filteredTasks);
     }
-
 
     let [filter, setFilter] = useState<FilterValuesType>("all");
 
@@ -65,5 +62,3 @@ function App() {
 
 
 export default App;
-
-
